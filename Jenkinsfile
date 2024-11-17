@@ -10,7 +10,7 @@ pipeline {
     stages {
         stage('Git Checkout') {
             steps {
-               git "https://${GIT_TOKEN}@github.com/vishal-bulbule/gcp-tf-jenkin.git"
+               git branch: 'main', credentialsId: 'GitHub', url: 'https://github.com/Amolghadge/GCP-Jenkins-tf-Bucket.git'
             }
         }
         
