@@ -3,6 +3,8 @@ pipeline {
 	
     environment {
         GOOGLE_APPLICATION_CREDENTIALS = credentials('gcp-sa-key')
+	GIT_TOKEN = credentials('GitHub')
+	    
     }
 	
     stages {
